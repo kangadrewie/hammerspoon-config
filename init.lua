@@ -40,11 +40,6 @@ function moveRight()
 	win:setFrame(f)
 end
 
-function scrollDown()
-    local scroll = hs.eventtap.event.newScrollEvent({0, 10},{},'pixel')
-    scroll:post()
-end
-
 -- Move focused window left and right by 20px
 hs.hotkey.bind({"cmd", "shift", "ctrl"}, "A", moveLeft, nil, moveLeft)
 hs.hotkey.bind({"cmd", "shift", "ctrl"}, "D", moveRight, nil, moveRight)
